@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="@ViewBag.Title" />
+    <base href="@Request.ApplicationPath/" />
+
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/Themes/base/css/site.css")">
+</head>
+<body data-ng-app="app" data-ng-strict-di>
+    <data-ui-view></data-ui-view>
+
+
+    <!-- ThirdParty -->
+    <script src="@Url.Content("~/Public/thirdParty/dev/angular-1.3.11.js")"></script>
+    <script src="@Url.Content("~/Public/thirdParty/dev/angular-ui-router-0.2.13.js")"></script>
+
+    <!-- App -->
+    <script src="@Url.Content("~/Public/app/app.js")"></script>
+
+    <!-- Controllers -->
+    <script src="@Url.Content("~/Public/app/controllers/controllerModule.js")"></script>
+
+    <!-- Services -->
+    <script src="@Url.Content("~/Public/app/services/serviceModule.js")"></script>
+
+    <!-- Repositories -->
+
+</body>
+</html>
+
+
