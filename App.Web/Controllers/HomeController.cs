@@ -10,7 +10,7 @@ namespace App.Web.Controllers
         /// <returns></returns>
         public ActionResult Index()
         {
-            ViewBag.Title = "My App";
+            ViewBag.Title = "Todo App";
 
             return View();
         }

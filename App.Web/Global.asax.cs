@@ -2,11 +2,9 @@
 using System.Web;
 using System.Web.Http;
 using System.Web.Http.Dispatcher;
-using System.Web.Mvc;
 using System.Web.Routing;
 using App.Data;
 using App.Service;
-using App.Toolkit;
 using App.Toolkit.IoC;
 using App.Web.Environment.Configuration;
 using App.Web.Environment.IoC;
@@ -30,13 +28,10 @@ namespace App.Web
                 .AddTypeToInspect(typeof(IUnitOfWork), false)
                 .AddModule(new ServiceModule())
                 .AddTypeToInspect(typeof(IService))
-                .AddModule(new LoggerModule())
-                .AddTypeToInspect(typeof(ILogger), false)
                 .Initialize();
 
             // Register a new HttpControllerActivator to let Ninject handle the injection
             GlobalConfiguration.Configuration.Services.Replace(typeof(IHttpControllerActivator), new NinjectControllerActivator());
-            AreaRegistration.RegisterAllAreas();
         }
     }
 }
