@@ -3,9 +3,7 @@
 
     angular.module('myApp', [
         // ThirdParty
-        'ui.router',
+        'ui.router'
         // App
-        'app.services',
-        'app.controllers'
     ]);
 })();
