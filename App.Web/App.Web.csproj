@@ -168,32 +168,6 @@
     <Folder Include="Public\app\services\repositories\" />
     <Folder Include="Public\views\partials\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\App.Data.Implements\App.Data.Implements.csproj">
-      <Project>{6EBAC896-F2A0-44A2-B770-CDA6B93DDAD4}</Project>
-      <Name>App.Data.Implements</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\App.Data\App.Data.csproj">
-      <Project>{B3366085-B227-4874-B689-B09BA0C52CB6}</Project>
-      <Name>App.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\App.Entities\App.Entities.csproj">
-      <Project>{581B90C2-FC54-4EFD-9471-B080A0C51AD7}</Project>
-      <Name>App.Entities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\App.Service.Implements\App.Service.Implements.csproj">
-      <Project>{3BB9C6BB-845C-4502-8D22-F27887BBEAD6}</Project>
-      <Name>App.Service.Implements</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\App.Service\App.Service.csproj">
-      <Project>{279D16BA-8458-4C69-AF44-3A345BBCC199}</Project>
-      <Name>App.Service</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\App.Toolkit\App.Toolkit.csproj">
-      <Project>{6CCBBEC9-1DBE-45E9-80AA-DEBBDFF4A694}</Project>
-      <Name>App.Toolkit</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -52,9 +52,6 @@
     <Compile Include="Extensions\LambdaExpressionExtensions.cs" />
     <Compile Include="Extensions\ObjectExtension.cs" />
     <Compile Include="Extensions\QueryableExtensions.cs" />
-    <Compile Include="ILogger.cs" />
-    <Compile Include="IoC\Components\NinjectAutoInjectionHeuristic.cs" />
-    <Compile Include="IoC\NinjectHost.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
