@@ -5,3 +5,5 @@
 */.idea/*
 packages
 bower_components/*
+*.suo
+*.user

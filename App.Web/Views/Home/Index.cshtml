@@ -19,19 +19,27 @@
             <a class="btn btn-lg btn-success" href="#" role="button">Ajouter une Todo</a>
         </p>
 
-        <ol class="todos">
-            <li class="todo">
-                <div class="page-header">
-                    <h1>{{ 'Marvin' + ' 42' }}</h1>
-                    <button type="button" class="btn btn-warning btn-delete btn-xs">Supprimer</button>
-                </div>
-                <p class="lead">Todo texte.</p>
+        <ol class="todos list-group">
+            <li class="todo list-group-item">
+                <label class="toggle">
+                    <input type="checkbox">
+                </label>
+                <p>{{ 'Marvin' + ' 42' }}</p>         
+                <button type="button" class="btn btn-warning btn-delete btn-xs">Supprimer</button>
             </li>
-            <li class="todo">
-                <div class="page-header">
-                    <h1>{{ 'Marvin' + ' 42' }}</h1>
-                </div>
-                <p class="lead">Todo texte.</p>
+            <li class="todo list-group-item">
+                <label class="toggle">
+                    <input type="checkbox">
+                </label>
+                <p>{{ 'Marvin' + ' 42' }}</p>
+                <button type="button" class="btn btn-warning btn-delete btn-xs">Supprimer</button>
+            </li>
+            <li class="todo list-group-item">
+                <label class="toggle">
+                    <input type="checkbox">
+                </label>
+                <p>{{ 'Marvin' + ' 42' }}</p>
+                <button type="button" class="btn btn-warning btn-delete btn-xs">Supprimer</button>
             </li>
         </ol>
 

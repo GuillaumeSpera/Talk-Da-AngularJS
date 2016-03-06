@@ -13,20 +13,73 @@ ol.todos {
 ol.todos li {
     margin: 0;
     padding: 0;
+    font-size: 1.4em;
 }
 
-ol.todos li.todo .page-header {
+ol.todos li.todo {
     position: relative;
+    padding: 20px 10px;
 }
 
-ol.todos li.todo .page-header h1 {
-    margin-bottom: 0;
-}
-
-ol.todos li.todo .page-header .btn-delete {
+ol.todos li .toggle {
     position: absolute;
-    right: 0;
-    top: 5px;
+    top: 10px;
+    left: 10px;
+}
+
+ol.todos li .toggle input {
+    border-radius: 50%;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    height: 40px;
+    width: 40px;
+    background: #cbd1d8;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    z-index: 1000;
+    font-family: 'Glyphicons Halflings';
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s;
+}
+
+ol.todos li .toggle input:checked {
+    background: #5bc0de;
+}
+
+ol.todos li .toggle input:before {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+ol.todos li .toggle input:checked:before {
+    content: "\e013";
+}
+
+ol.todos li p {
+    margin: 0 0 0 50px;
+}
+
+ol.todos li.todo .btn-delete {
+    position: absolute;
+    right: 10px;
+    top: 22px;
 }
 
 footer {
