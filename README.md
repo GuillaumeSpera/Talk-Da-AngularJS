@@ -1,1 +1,1 @@
-# Code project : Talk Da{Angular}
+# Talk Da{Angular}
