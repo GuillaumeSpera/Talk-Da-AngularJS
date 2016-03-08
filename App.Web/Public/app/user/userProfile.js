@@ -2,9 +2,10 @@
     'use strict';
 
     angular.module('user')
-        .factory('User', userFactory);
+        .directive('userProfile', userProfile);
 
-    function userFactory() {
+    // Component syntax
+    function userProfile() {
         return {};
     }
 })();

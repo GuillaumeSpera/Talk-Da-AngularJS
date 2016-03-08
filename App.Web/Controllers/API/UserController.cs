@@ -7,7 +7,7 @@ namespace App.Web.Controllers.API
     /// <summary>
     /// Sample controller for Web API
     /// </summary>
-    public class SampleController : ApiController
+    public class UserController : ApiController
     {
         /// <summary>
         /// Sample Get method

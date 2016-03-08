@@ -10,7 +10,7 @@
     function onConfig($stateProvider) {
         $stateProvider
             .state({
-                name: 'about',
+                name: 'root.about',
                 url: '/About',
                 templateUrl: 'public/app/about/about.html'
             })

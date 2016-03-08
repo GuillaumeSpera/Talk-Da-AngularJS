@@ -2,8 +2,11 @@
     'use strict';
 
     angular.module('myApp', [
-        // ThirdParty
-        'ui.router'
+        // Assets
+        'ui.router',
         // App
+        'todo',
+        'user',
+        'about'
     ]);
 })();

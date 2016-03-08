@@ -2,9 +2,11 @@
     'use strict';
 
     angular.module('todo')
-        .controller('TodoCtrl', TodoController);\
+        .factory('Todos', ['TODO_STATUS', 'Storage', todoFactory]);
 
-    function TodoController() {
-
+    // Use todoStatus on create
+    // Use Storage as storage service for todo entities
+    function todoFactory(TODO_STATUS, Storage) {
+        return {};
     }
 })();

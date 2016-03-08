@@ -1,16 +1,29 @@
 (function () {
     'use strict';
 
-    // # Module Configuration
     angular.module('myApp')
-        .config(appConfig)
-        .run(appRun);
+        .config([
+            '$locationProvider',
+            '$stateProvider',
+            onConfig
+        ])
+        .run(onRun);
 
-    function appConfig() {
+    function onConfig($locationProvider, $stateProvider) {
         console.log('Configuring application...');
+
+        $stateProvider
+            .state({
+                name: 'root',
+                abstract: true,
+                url: '',
+                templateUrl: 'public/app/app.html'
+            });
+
+        $locationProvider.html5Mode(true);
     }
 
-    function appRun() {
+    function onRun() {
         console.log('Application started...');
     }
 })();

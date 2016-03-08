@@ -1,3 +1,10 @@
-/**
- * Created by Guillaume on 3/6/2016.
- */
+(function () {
+    'use strict';
+
+    angular.module('storage', [])
+        .factory('Storage', storageFactory);
+
+    function storageFactory() {
+        return {};
+    }
+})();

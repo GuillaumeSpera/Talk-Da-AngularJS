@@ -114,6 +114,8 @@
     <Content Include="Global.asax" />
     <Content Include="Public\app\app.config.js" />
     <Content Include="Public\app\app.module.js" />
+    <Content Include="Public\app\todo\todo.controller.js" />
+    <Content Include="Public\app\todo\todo.module.js" />
     <Content Include="Public\assets\angular-ui-router.min.js" />
     <Content Include="Public\assets\angular.js" />
     <Content Include="Public\assets\angular.min.js" />
@@ -125,7 +127,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\API\SampleController.cs" />
+    <Compile Include="Controllers\API\UserController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Environment\Configuration\RouteConfig.cs" />
     <Compile Include="Environment\Configuration\WebApiConfig.cs" />
@@ -155,7 +157,6 @@
     <Folder Include="Content\" />
     <Folder Include="Models\" />
     <Folder Include="Public\app\components\" />
-    <Folder Include="Public\app\todo\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
