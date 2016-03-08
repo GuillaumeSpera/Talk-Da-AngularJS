@@ -10,51 +10,33 @@
     <link rel="stylesheet" type="text/css" href="@Url.Content("~/Public/css/site.css")">
 </head>
 <body ng-app="myApp">
-    <div class="container">
-        <div class="masthead">
-            <h3 class="text-muted">AngularJS Todo</h3>
-        </div>
-
-        <p class="actions">
-            <a class="btn btn-lg btn-success" href="#" role="button">Ajouter une Todo</a>
-        </p>
-
-        <ol class="todos list-group">
-            <li class="todo list-group-item">
-                <label class="toggle">
-                    <input type="checkbox">
-                </label>
-                <p>{{ 'Marvin' + ' 42' }}</p>         
-                <button type="button" class="btn btn-warning btn-delete btn-xs">Supprimer</button>
-            </li>
-            <li class="todo list-group-item">
-                <label class="toggle">
-                    <input type="checkbox">
-                </label>
-                <p>{{ 'Marvin' + ' 42' }}</p>
-                <button type="button" class="btn btn-warning btn-delete btn-xs">Supprimer</button>
-            </li>
-            <li class="todo list-group-item">
-                <label class="toggle">
-                    <input type="checkbox">
-                </label>
-                <p>{{ 'Marvin' + ' 42' }}</p>
-                <button type="button" class="btn btn-warning btn-delete btn-xs">Supprimer</button>
-            </li>
-        </ol>
-
-        <footer class="footer">
-            <p>©2016 DaTeam</p>
-        </footer>
-    </div>
+    <ui-view></ui-view>
 
     <!-- Assets -->
     <script src="@Url.Content("~/Public/assets/angular.min.js")"></script>
     <script src="@Url.Content("~/Public/assets/angular-ui-router.min.js")"></script>
 
+    <!-- Components -->
+    <script src="@Url.Content("~/Public/app/components/storage.js")"></script>
+
     <!-- App -->
     <script src="@Url.Content("~/Public/app/app.module.js")"></script>
     <script src="@Url.Content("~/Public/app/app.config.js")"></script>
+
+    <!-- Todo -->
+    <script src="@Url.Content("~/Public/app/todo/todo.module.js")"></script>
+    <script src="@Url.Content("~/Public/app/todo/todo.config.js")"></script>
+    <script src="@Url.Content("~/Public/app/todo/todo.service.js")"></script>
+    <script src="@Url.Content("~/Public/app/todo/todo.controller.js")"></script>
+    <script src="@Url.Content("~/Public/app/todo/components/statusFilter.js")"></script>
+
+    <!-- User -->
+    <script src="@Url.Content("~/Public/app/user/user.module.js")"></script>
+    <script src="@Url.Content("~/Public/app/user/userProfile.js")"></script>
+
+    <!-- About -->
+    <script src="@Url.Content("~/Public/app/about/about.module.js")"></script>
+    <script src="@Url.Content("~/Public/app/about/about.config.js")"></script>
 
 </body>
 </html>

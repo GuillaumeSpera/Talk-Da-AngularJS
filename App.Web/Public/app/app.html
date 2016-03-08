@@ -1,5 +1,18 @@
-<div id="header">
-    <user-profile></user-profile>
+<div class="container">
+    <div class="masthead">
+        <h3 class="text-muted">AngularJS Todo</h3>
+        <a ui-sref="root.todo">AngularJS Todo</a>
+        <a ui-sref="root.about">À propos</a>
+        <user-profile></user-profile>
+    </div>
+
+    <div ui-view="content"></div>
+
+    <footer class="footer">
+        <p>© 2016 DaTeam</p>
+    </footer>
 </div>
 
-<div ui-view="content"></div>
+
+
+

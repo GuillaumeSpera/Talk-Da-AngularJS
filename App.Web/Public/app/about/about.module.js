@@ -1,8 +1,8 @@
 (function () {
     'use strict';
 
-    angular.module('lost', [
+    angular.module('about', [
         // Assets
         'ui.router'
     ]);
-})()
+})();

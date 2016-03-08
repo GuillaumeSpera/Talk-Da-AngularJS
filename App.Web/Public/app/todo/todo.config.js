@@ -1,19 +1,18 @@
 (function () {
     'use strict';
 
-    angular.module('todo', [])
+    angular.module('todo')
         .constant('TODO_STATUS', {
             inProgress: 1,
             complete: 2
         })
         .config([
             '$urlRouterProvider',
-            '$locationProvider',
             '$stateProvider',
             onConfig
         ]);
 
-    function onConfig($urlRouterProvider, $locationProvider, $stateProvider) {
+    function onConfig($urlRouterProvider, $stateProvider) {
         console.log('Configuring todo module...');
 
         $urlRouterProvider.otherwise('/');
@@ -22,32 +21,13 @@
             .state({
                 name: 'root.todo',
                 url: '/',
-                templateUrl: 'public/app/todo/todo.html',
-                controller: 'TodoCtrl'
-            })
-            .state({
-                name: 'root.todoCreate',
-                url: '/Create',
-                templateUrl: 'public/app/todo/todoCreate.html'
-            })
-            .state({
-                name: 'root.todoEdit',
-                url: '/Edit',
-                templateUrl: 'public/app/todo/todoEdit.html'
+                views: {
+                    'content@root': {
+                        templateUrl: 'public/app/todo/todo.html',
+                        controller: 'TodoCtrl',
+                        controllerAs: 'Todo'
+                    }
+                }
             });
     }
-})();
-
-
-(function () {
-    'use strict';
-
-    angular.module('myApp', []); // Création du module
-})();
-
-
-(function () {
-    'use strict';
-
-    angular.module('myApp'); // Récupération du module
 })();

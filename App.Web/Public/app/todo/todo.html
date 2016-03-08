@@ -1,0 +1,24 @@
+<p class="actions">
+    <form name="todoForm">
+        <input type="text" ng-model="Todo.newTodoTitle"/>
+        <button type="button" ng-click="Todo.addTodo()" class="btn btn-lg btn-success" role="button">Ajouter une Todo</button>
+    </form>
+<div>
+    <a href="#" ng-click="Todo.switchFilter()">Tous</a>
+    <a href="#" ng-click="Todo.switchFilter(Todo.TODO_STATUS.inProgress)">En cours</a>
+    <a href="#" ng-click="Todo.switchFilter(Todo.TODO_STATUS.complete)">Terminés</a>
+</div>
+</p>
+
+<ol class="todos list-group">
+    <li ng-repeat="todoItem in Todo.todoCollection | statusFilter : Todo.statusFilter" class="todo list-group-item">
+        <label class="toggle">
+            <input type="checkbox" ng-model="todoItem.status" ng-change="Todo.onStatusChange(todoItem)"
+                   ng-true-value="{{ Todo.TODO_STATUS.complete }}" ng-false-value="{{ Todo.TODO_STATUS.inProgress }}">
+        </label>
+
+        <p>{{ todoItem.title }}</p>
+        <button type="button" ng-click="Todo.removeTodo(todoItem)" class="btn btn-warning btn-delete btn-xs">Supprimer
+        </button>
+    </li>
+</ol>

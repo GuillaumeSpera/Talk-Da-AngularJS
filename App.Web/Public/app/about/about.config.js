@@ -12,7 +12,11 @@
             .state({
                 name: 'root.about',
                 url: '/About',
-                templateUrl: 'public/app/about/about.html'
+                views: {
+                    'content@root': {
+                        templateUrl: 'public/app/about/about.html'
+                    }
+                }
             })
     }
 })();

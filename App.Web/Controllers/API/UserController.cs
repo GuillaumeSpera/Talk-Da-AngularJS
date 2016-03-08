@@ -14,9 +14,9 @@ namespace App.Web.Controllers.API
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public HttpResponseMessage Get()
+        public HttpResponseMessage Index()
         {
-            return Request.CreateResponse(HttpStatusCode.OK, new { Message = "This is a sample !"});
+            return Request.CreateResponse(HttpStatusCode.OK, new { UserName = "Marvin"});
         }
     }
 }
