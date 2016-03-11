@@ -112,10 +112,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Public\app\about\about.config.js" />
+    <Content Include="Public\app\about\about.html" />
+    <Content Include="Public\app\about\about.module.js" />
     <Content Include="Public\app\app.config.js" />
+    <Content Include="Public\app\app.html" />
     <Content Include="Public\app\app.module.js" />
+    <Content Include="Public\app\todo\components\statusFilter.js" />
+    <Content Include="Public\app\todo\todo.config.js" />
     <Content Include="Public\app\todo\todo.controller.js" />
+    <Content Include="Public\app\todo\todo.html" />
     <Content Include="Public\app\todo\todo.module.js" />
+    <Content Include="Public\app\todo\todo.service.js" />
+    <Content Include="Public\app\user\user.module.js" />
+    <Content Include="Public\app\user\userProfile.html" />
+    <Content Include="Public\app\user\userProfile.js" />
     <Content Include="Public\assets\angular-ui-router.min.js" />
     <Content Include="Public\assets\angular.js" />
     <Content Include="Public\assets\angular.min.js" />
